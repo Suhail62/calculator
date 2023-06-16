@@ -18,9 +18,13 @@ Array.from(buttons).forEach((button)=>{
         string = string.slice(0,-1)
         document.querySelector("textarea").innerText = string;
         }
-        else{
+        else if (e.target.innerHTML == "%") {
+            // divide the value by 100 to get the percentage
+            string = eval(string) / 100;
+            document.querySelector("textarea").innerText = string;
+          } else {
             string = string + e.target.innerText;
             document.querySelector("textarea").innerText = string;
-        }
-    })
-})
+          }
+        });
+      });
