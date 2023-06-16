@@ -60,10 +60,10 @@ textarea{
     font-size: 1.5rem;
 }
 button.operator{
-    background-color: #f69906;
+    background-color: #f60606;
 }
 button.divide:after{
-    content:"÷";
+    content:"÷"; 
     position: absolute;
-    background-color: #f69906;
+    background-color: #f60606;
 }
